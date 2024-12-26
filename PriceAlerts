@@ -47,7 +47,7 @@ def check_hbar_price():
         print("Failed to fetch price.")
 
 # Schedule the bot to run every minute
-schedule.every(1).minutes.do(check_hbar_price)
+schedule.every(3).minutes.do(check_hbar_price)
 
 if __name__ == "__main__":
     print("WhatsApp bot running...")
